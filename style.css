@@ -50,7 +50,7 @@ body {
     text-align: center;
     justify-content: center;
     width: 510px;
-    border-bottom: solid 1px #3a3a3c;
+    border-bottom: solid 1px #3A3A3CFF;
 }
 
 :root {
@@ -264,4 +264,9 @@ svg:hover {
 
 .btn.wrong {
   background-color: #ff6347
+}
+
+hr.solid {
+  border-color: #3A3A3CFF;
+  width: 510px;
 }
