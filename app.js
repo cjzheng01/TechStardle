@@ -1,3 +1,9 @@
+const btn = document.querySelector("button"); // Get the button from the page
+const question = document.getElementById("question");
+const answerButtons = document.getElementById("answer-buttons");
+const startTime = 1652328000000; // May 12th timestamp
+
+
 // Detect clicks on the button
 if (btn) {
   btn.onclick = function () {
