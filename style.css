@@ -39,7 +39,7 @@ body {
 }
 
 .game-container {
-  height: 90vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -240,4 +240,34 @@ svg:hover {
   color: #f7f7f7;
   padding: 10px;
   font-size: 14px;
+}
+
+.question-container {
+  font-size: 24px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 12px;
+}
+
+.btn {
+  background-color: #363636;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  border-color: #ffffff;
+}
+
+.btn.correct {
+  background-color: #afe1af;
+  color: black;
+}
+
+.btn.wrong {
+  background-color: #ff6347;
 }
