@@ -15,35 +15,27 @@ if (btn) {
 
 // extremely jank question storage
 const questions = [
-  {
-    question: "day 1",
-    answers: [
-      { text: "a", correct: true },
-      { text: "b", correct: false },
-      { text: "c", correct: false },
-      { text: "d", correct: false },
-    ],
-  },
-
-  {
-    question: "day 2",
-    answers: [
-      { text: "a", correct: false },
-      { text: "b", correct: false },
-      { text: "c", correct: true },
-      { text: "d", correct: false },
-    ],
-  },
-
-  {
-    question: "day 3",
-    answers: [
-      { text: "a", correct: false },
-      { text: "b", correct: false },
-      { text: "c", correct: false },
-      { text: "d", correct: true },
-    ],
-  },
+    {
+        "question": "What year did UKG form in?",
+	"answers": [{"text": "1996", "correct": false}, 
+		{"text": "2004", "correct": false}, 
+		{"text": "2019", "correct": false},
+		{"text": "2020", "correct": true}]
+    },
+    {
+	"question": "Which team does UKG sponsor?",
+	"answers": [{"text": "Miami Marlins", "correct": false}, 
+		{"text": "Miami Heat", "correct": true}, 
+		{"text": "Florida Panthers", "correct": false},
+		{"text": "Miami Dolphins", "correct": false}]
+    },
+    {
+        "question":"In what UKG competition do participants share creative ideas?",
+	"answers": [{"text": "Insert fake answer", "correct": false}, 
+		{"text": "Spark Tank", "correct": true}, 
+		{"text": "Idk", "correct": false},
+		{"text": "Hello", "correct": false}]
+    }
 ];
 
 // makes the current day's question
