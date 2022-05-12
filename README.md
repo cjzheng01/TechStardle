@@ -1,6 +1,6 @@
 ## Welcome to TechStardle
 
-This page is published at [TechStardle](TechStardle).
+This page is published at [TechStardle](https://cjzheng01.github.io/chlambam/).
 
 It is a daily competitive trivia game about fun facts about Ultimate Kronos Group (UKG), with a leaderboard to see what interns have been keeping up their trivia streaks.
 
