@@ -20,13 +20,13 @@
 
   <body>
     <div class="game-container">
-       
+
 
 
     <div class="game-container">
       <div class="title-container" style="display:flex;">
             <h1 class="text-xl ml-2.5 grow font-bold dark:text-white">TechStardle</h1>
-            
+
             <button id="help-button" class="icon" aria-label="Help" tabindex="-1" onclick="show_help()" value="Show help box">
                 <game-icon icon="help">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="30px" height="30px" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6 mr-2 cursor-pointer dark:stroke-white">
@@ -47,9 +47,17 @@
             </button>
         </div>
       </div>
-      <div class="message-container"></div>
-      <div class="question-container"></div>
-      <div class="answer-container"></div>
+      <div class="question-container">
+        <div id="question">Question</div>
+      </div>
+      <div class="answer-container">
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+      </div>
     </div>
 
     <script src="app.js"></script>
