@@ -1,20 +1,20 @@
 * {
-    color: #ffffff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  color: #ffffff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 button {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 }
 
 body {
-    background-color: #121213;
+  background-color: #121213;
 }
 
 .overlay {
@@ -39,41 +39,41 @@ body {
 }
 
 .game-container {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title-container {
-    text-align: center;
-    justify-content: center;
-    width: 510px;
-    border-bottom: solid 1px #3A3A3CFF;
+  text-align: center;
+  justify-content: center;
+  width: 510px;
+  border-bottom: solid 1px #3a3a3cff;
 }
 
 :root {
   --animation-speed: 1000ms;
   --animation-speed-fast: 250ms;
-  --default-cell-bg-color: theme('colors.white');
-  --default-cell-border-color: theme('colors.black');
-  --default-cell-text-color: theme('colors.black');
-  --absent-cell-bg-color: theme('colors.slate.400');
-  --correct-cell-bg-color: theme('colors.green.400');
-  --present-cell-bg-color: theme('colors.yellow.400');
+  --default-cell-bg-color: theme("colors.white");
+  --default-cell-border-color: theme("colors.black");
+  --default-cell-text-color: theme("colors.black");
+  --absent-cell-bg-color: theme("colors.slate.400");
+  --correct-cell-bg-color: theme("colors.green.400");
+  --present-cell-bg-color: theme("colors.yellow.400");
 }
 
 .dark {
-  --default-cell-bg-color: theme('colors.slate.900');
-  --default-cell-border-color: theme('colors.white');
-  --default-cell-text-color: theme('colors.white');
-  --absent-cell-bg-color: theme('colors.slate.700');
+  --default-cell-bg-color: theme("colors.slate.900");
+  --default-cell-border-color: theme("colors.white");
+  --default-cell-text-color: theme("colors.white");
+  --absent-cell-bg-color: theme("colors.slate.700");
 }
 
 .high-contrast {
-  --correct-cell-bg-color: theme('colors.orange.400');
-  --present-cell-bg-color: theme('colors.cyan.400');
+  --correct-cell-bg-color: theme("colors.orange.400");
+  --present-cell-bg-color: theme("colors.cyan.400");
 }
 
 .cell-fill-animation {
@@ -235,14 +235,13 @@ svg:hover {
   }
 }
 
-
 .question-container {
   font-size: 24px;
 }
 
 .btn-grid {
-  display:grid;
-  grid-template-columns: repeat(1,auto);
+  display: grid;
+  grid-template-columns: repeat(1, auto);
   gap: 12px;
 }
 
@@ -259,14 +258,19 @@ svg:hover {
 
 .btn.correct {
   background-color: #afe1af;
-  color: black
+  color: black;
 }
 
 .btn.wrong {
-  background-color: #ff6347
+  background-color: #ff6347;
 }
 
 hr.solid {
-  border-color: #3A3A3CFF;
+  border-color: #3a3a3cff;
   width: 510px;
+}
+
+.format-pre pre {
+  color: black;
+  padding: 10px;
 }
