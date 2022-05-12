@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>TechStardle</title>
     <link rel="stylesheet" href="style.css" />
@@ -13,45 +13,33 @@
       href="files/favicons/favicon-32x32.png"
     />
   </head>
+
+
+
+
+
   <body>
+    <div class="game-container">
+       
+
+
     <div class="game-container">
       <div class="title-container" style="display:flex;">
             <h1 class="text-xl ml-2.5 grow font-bold dark:text-white">TechStardle</h1>
-            <div class="overlay" id="overlay" style="visibility: hidden;"></div>
-            <div class="modal" id="modal" style="visibility: hidden; color: black;">
-              <p style="color:black">
-                Welcome to the TechStardle! You will be given a daily UKG trivia question, and it's your job to find the right answer! 
-              </p>
-              <h4 style="color:black">
-                <b>Special Rules</b>
-              </h4>
-              <p style="color:black">
-                You can use any resource you want to help you solve the question. This includes any ukg domain specific URL or source. We can't stop you from using other sources, but we can be disappointed!
-              </p>
-              <p style="color:black">
-                Look for your name on the leaderboard to see your place in the UKG standings. Every 15th and 30th (28th/29th on February) we'll give the top 3 a UKG reward! See the reward section for more details on those.
-              </p>
-
-              <p style="color:black">
-                Instructions: Simply choose the right answer to the question from the list of choices and hit <b>Submit</b>! Your concurrent score will automatically be calculate and tallied!
-              </p>
-
-              <button id="close" style="color: black; font-size: 25px; position:absolute; top:0; right:0;" onclick="helpClose()">X</button>
             
-            </div>
-            <button id="help-button" class="icon" aria-label="Help" tabindex="-1" onclick="displayHelp()">
+            <button id="help-button" class="icon" aria-label="Help" tabindex="-1" onclick="show_help()" value="Show help box">
                 <game-icon icon="help">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="30px" height="30px" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6 mr-2 cursor-pointer dark:stroke-white">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                 </game-icon>
             </button>
-            <button>
+            <button onclick="show_stats()" value="Show stats box">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="30px" height="30px" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6 mr-3 cursor-pointer dark:stroke-white">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                 </svg>
             </button>
-            <button>
+            <button onclick="show_options()" value="Show options box">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="30px" height="30px" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6 mr-3 cursor-pointer dark:stroke-white">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -65,38 +53,6 @@
     </div>
 
     <script src="app.js"></script>
-
-    <script>
-      function displayHelp() {
-
-        var node = document.getElementById('overlay')
-        if (node.style.visibility=='visible') {
-          node.style.visibility = 'hidden';
-        }
-        else
-          node.style.visibility = 'visible'
-
-        var node_2 = document.getElementById('modal')
-        if (node_2.style.visibility=='visible') {
-          node_2.style.visibility = 'hidden';
-        }
-        else
-        node_2.style.visibility = 'visible'
-      }
-
-      function helpClose() {
-        var node = document.getElementById('overlay')
-        var node_2 = document.getElementById('modal')
-
-        node.style.visibility = 'hidden';
-        node_2.style.visibility = 'hidden';
-      }
-
-
-    </script>
-
   </body>
 
 </html>
-            
-
