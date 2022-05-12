@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>TechStardle</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -14,48 +12,105 @@
     />
   </head>
 
-
-
-
-
   <body>
     <div class="game-container">
+      <div class="game-container">
+        <div class="title-container" style="display: flex">
+          <h1 class="text-xl ml-2.5 grow font-bold dark:text-white">
+            TechStardle
+          </h1>
 
-
-
-    <div class="game-container">
-      <div class="title-container" style="display:flex;">
-            <h1 class="text-xl ml-2.5 grow font-bold dark:text-white">TechStardle</h1>
-
-            <button id="help-button" class="icon" aria-label="Help" tabindex="-1" onclick="show_help()" value="Show help box">
-                <game-icon icon="help">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="30px" height="30px" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6 mr-2 cursor-pointer dark:stroke-white">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                </game-icon>
-            </button>
-            <button onclick="show_stats()" value="Show stats box">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="30px" height="30px" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6 mr-3 cursor-pointer dark:stroke-white">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                </svg>
-            </button>
-            <button onclick="show_options()" value="Show options box">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="30px" height="30px" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6 mr-3 cursor-pointer dark:stroke-white">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-            </button>
+          <button
+            id="help-button"
+            class="icon"
+            aria-label="Help"
+            tabindex="-1"
+            onclick="show_help()"
+            value="Show help box"
+          >
+            <game-icon icon="help">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                width="30px"
+                height="30px"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+                class="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </game-icon>
+          </button>
+          <button
+            id="stats-button"
+            onclick="show_stats()"
+            value="Show stats box"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              width="30px"
+              height="30px"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+              class="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+              ></path>
+            </svg>
+          </button>
+          <button
+            id="options-button"
+            onclick="show_options()"
+            value="Show options box"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              width="30px"
+              height="30px"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+              class="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              ></path>
+            </svg>
+          </button>
         </div>
         <div class="question-container">
-            <div id="question">Question</div>
+          <div id="question">Question</div>
         </div>
         <div class="answer-container">
-            <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-            </div>
+          <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+          </div>
         </div>
         <div>
             <hr class="solid">
@@ -63,10 +118,77 @@
                  for UKG TechStar Intern Onboarding Bootcamp.</p>
         </div>
       </div>
-
     </div>
 
-    <script src="app.js"></script>
-  </body>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      function show_help() {
+        Swal.fire({
+          title: "Welcome to TechStardle!",
+          text: "On a daily basis, we have a new trivia question for our TechStar Interns. You only have on guess, make it count. Come back everyday to test your UKG knowledge and keep your streak!",
+          confirmButtonText: "Cool!",
+        });
+      }
+      document
+        .getElementById("help-button")
+        .addEventListener("click", show_help);
 
+      let played = (win = curr_streak = max_streak = 0);
+      let stats =
+        "Played:" +
+        played +
+        "\n" +
+        "Win:" +
+        win +
+        "%\n" +
+        "Current Streak:" +
+        curr_streak +
+        "\n" +
+        "Max Streak:" +
+        max_streak +
+        "\n";
+
+      function show_stats() {
+        Swal.fire({
+          title: "Statistics",
+          html: "<pre>" + stats + "</pre>",
+          customClass: {
+            popup: "format-pre",
+          },
+          confirmButtonText: "Cool!",
+        });
+      }
+      document
+        .getElementById("stats-button")
+        .addEventListener("click", show_stats);
+
+      function show_options() {
+        (async () => {
+          const { value: userName } = await Swal.fire({
+            title: "Enter your name ",
+            input: "text",
+            text: "To be considered on the leader board, we have to know who you are",
+            inputPlaceholder: "Enter your name",
+            showCancelButton: true,
+            inputValidator: (value) => {
+              if (!value) {
+                return "You need to write something!";
+              }
+            },
+          });
+          /* 
+          console.log(userName);
+          if (userName) {
+            console.log(userName);
+            Swal.fire(`Welcome again, ${userName}`);
+          }
+          */
+        })();
+      }
+
+      document
+        .getElementById("options-button")
+        .addEventListener("click", show_options);
+    </script>
+  </body>
 </html>
